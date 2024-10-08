@@ -1,5 +1,11 @@
 var Name;
 
+function GetDayFromDate(dateString){
+const date = new Date(dateString);
+const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
+return dayName
+}
+
 function GetCityObject(City) {
     fetch(`https://api.weatherapi.com/v1/forecast.json?key=dbcebcda9c9248f1ac1164956240810&q=${City}&days=4&aqi=no&alerts=yes`)
         .then(response => {
@@ -16,6 +22,7 @@ function GetCityObject(City) {
                 let card = document.getElementById(`day${i + 1}`);
                 let iconUrl = `https:${day.day.condition.icon}`;
                 card.querySelector('.forecast').innerHTML = `
+                ${GetDayFromDate(day.date)}<br>
                 <b>${day.day.condition.text}</b><br>
                 <img src="${iconUrl}" alt="${day.day.condition.text}" style="width: 64px; height: 64px;"><br>
                 Average Temperature: ${day.day.avgtemp_c} °C

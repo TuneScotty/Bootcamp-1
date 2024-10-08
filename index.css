@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(to left, #ce8573, #feb47b);
+}
+
+h1 {
+    margin-top: auto;
+    text-align: center;
+}
+
+i:hover {
+    color: rgb(53, 30, 255);
+}
+
+h1:hover {
+    color: rgb(53, 30, 255);
+}
+
+.Button_Container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+button:hover {
+    transform: scale(0.96);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+ol {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.card {
+    border: 1px solid #363636;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.forecast img {
+    display: block;
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+}

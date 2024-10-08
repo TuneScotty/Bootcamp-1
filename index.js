@@ -1,5 +1,3 @@
-var Name;
-
 function GetDayFromDate(dateString){
 const date = new Date(dateString);
 const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
@@ -39,11 +37,11 @@ function GetName() {
 }
 
 function SetName() {
-    Name = prompt("Enter your name:");
+    var Name = prompt("Enter your name:");
     document.getElementById(`username`).innerHTML = Name
 }
 
 function GetCity() {
-    var CityObject = prompt("Enter the requested city:");
+    let CityObject = prompt("Enter the requested city:");
     return CityObject;
 }

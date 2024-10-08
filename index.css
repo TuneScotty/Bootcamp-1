@@ -1,4 +1,9 @@
-body {
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
     background: linear-gradient(to left, #ce8573, #feb47b);
 }
 

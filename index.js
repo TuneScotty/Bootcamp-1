@@ -1,7 +1,7 @@
 var Name;
 
 function GetCityObject(City) {
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=dbcebcda9c9248f1ac1164956240810&q=${City}&days=4&aqi=no&alerts=yes`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=dbcebcda9c9248f1ac1164956240810&q=${City}&days=4&aqi=no&alerts=yes`)
         .then(response => {
             console.log('Status Code:', response.status);
             if (response.status === 200) {

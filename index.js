@@ -15,6 +15,7 @@ function GetCityObject(City) {
             }
         })
         .then(data => {
+            console.log(data)
             for (let i = 0; i < data.forecast.forecastday.length; i++) {
                 let day = data.forecast.forecastday[i];
                 let card = document.getElementById(`day${i + 1}`);
@@ -32,13 +33,13 @@ function GetCityObject(City) {
         });
 }
 
-function GetName() {
-    alert(`Hello dear ${Name}!`)
-}
-
 function SetName() {
     var Name = prompt("Enter your name:");
     document.getElementById(`username`).innerHTML = Name
+}
+
+function GetName() {
+    alert(`Hello dear ${Name}!`)
 }
 
 function GetCity() {
